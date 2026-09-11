@@ -23,10 +23,10 @@ const friends = [
   {
     name: "Karin",
     user: "@Rina",
-    bio: "Digital artist & Cosplayer",
+    bio: "Digital artist",
     avatar: "T1",
     links: [
-      ["Instagram", "https://www.instagram.com/scripp_2?stkn=c3R2cWZkcHU5d3M3"],
+      ["Instagram", "https://www.instagram.com/ray_to.rin?stkn=ajh5aXVyMXM4ajZw"],
       ["TikTok", "https://www.tiktok.com/@ahpotatoes?_r=1&_t=ZS-99edOYGNxIt"],
     ],
   },
