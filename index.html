@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium creator space — karya, support, teman, dan sosial media."
+    />
+    <title>support kita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="particles"></canvas>
+    <div class="aurora aurora-a"></div>
+    <div class="aurora aurora-b"></div>
+    <div class="noise"></div>
+
+    <header class="nav">
+      <a href="#home" class="logo"><span>✦</span> HOME</a>
+      <nav>
+        <a href="#support">Support</a>
+        <a href="#works">Karya temen</a>
+        <a href="#friends">Teman</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero reveal">
+        <div class="hero-grid-glow"></div>
+
+        <!-- =========================================================
+       3 AVATAR PLACEHOLDER
+       Ganti file berikut di folder assets/:
+       avatar-left.svg
+       avatar-center.svg
+       avatar-right.svg
+       ========================================================= -->
+        <div class="avatar-stage" aria-label="Tiga avatar creator">
+          <div class="avatar-orbit orbit-one"></div>
+          <div class="avatar-orbit orbit-two"></div>
+          <div class="avatar-spark spark-1"></div>
+          <div class="avatar-spark spark-2"></div>
+          <div class="avatar-spark spark-3"></div>
+
+          <div class="avatar-card side-avatar left-avatar">
+            <div class="avatar-halo"></div>
+            <div class="avatar-ring">
+              <img src="assets/avatar-left.svg" alt="Avatar kiri" />
+            </div>
+            <span class="avatar-label">CREATIVE</span>
+          </div>
+
+          <div class="avatar-card main-avatar">
+            <div class="avatar-halo"></div>
+            <div class="avatar-ring">
+              <img src="assets/avatar-center.svg" alt="Avatar utama tengah" />
+            </div>
+            <span class="avatar-label">CREATOR</span>
+          </div>
+
+          <div class="avatar-card side-avatar right-avatar">
+            <div class="avatar-halo"></div>
+            <div class="avatar-ring">
+              <img src="assets/avatar-right.svg" alt="Avatar kanan" />
+            </div>
+            <span class="avatar-label">DIGITAL</span>
+          </div>
+        </div>
+
+        <p class="kicker">CREATOR • DIGITAL ART • DESIGNER WEB </p>
+        <h1>Membuat sesuatu yang<br /><span>ingin kamu ingat.</span></h1>
+        <p class="lead">
+          Selamat datang di ruang kreatif kita. Temukan karya terbaru, dukung
+          perjalanan kita, dan kenalan dengan teman-teman kreator di sini.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="#support">☕ Dukung kita</a>
+          <a class="btn ghost" href="#works">Lihat Karya kita<b>↓</b></a>
+        </div>
+
+      <section id="support" class="section reveal">
+        <div class="section-title">
+          <p class="kicker">SUPPORT THE CREATOR</p>
+          <h2>Kalau suka karya kita,<br /><em>boleh traktir kopi.</em> ☕</h2>
+          <p>Dukungan kamu membantu kita terus membuat karya baru.</p>
+        </div>
+        <div class="support-grid">
+          <a
+            class="support-card purple"
+            href="https://sociabuzz.com/wanzsky/donate"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="support-icon">♡</div>
+            <div>
+              <small>SUPPORT VIA</small>
+              <h3>SociaBuzz</h3>
+              <p>Kirim dukungan & tip secara mudah.</p>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+          <a
+            class="support-card blue"
+            href="https://saweria.co/Wanskyin"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="support-icon">☕</div>
+            <div>
+              <small>SUPPORT VIA</small>
+              <h3>Saweria</h3>
+              <p>Traktir kita untuk karya berikutnya.</p>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+          <a
+            class="support-card discord"
+            href="https://discord.gg/f7mUyxQDPe"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="support-icon">◉</div>
+            <div>
+              <small>JOIN COMMUNITY</small>
+              <h3>Discord</h3>
+              <p>Ngobrol, sharing, dan ikut komunitas.</p>
+            </div>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="works" class="section reveal">
+        <div class="section-head">
+          <div>
+            <p class="kicker">SELECTED WORKS</p>
+            <h2>Karya terbaru.</h2>
+          </div>
+          <a class="all" href="#">Lihat semua →</a>
+        </div>
+        <div id="worksGrid" class="works"></div>
+      </section>
+
+      <section id="friends" class="section reveal">
+        <div class="section-title">
+          <p class="kicker">CREATOR FRIENDS</p>
+          <h2>Mereka yang ikut<br /><em>menginspirasi.</em></h2>
+          <p>Jangan lupa mampir dan support karya teman-teman saya.</p>
+        </div>
+        <div id="friendsGrid" class="friends"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">✦ NOVA</div>
+      <p>Dibuat dengan ♥ untuk para kreator.</p>
+    </footer>
+
+    <audio id="bgMusic" loop src="assets/epp.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
