@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium futuristic photo gallery" />
+    <title>RINA GALLERY</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-1"></div>
+    <div class="ambient ambient-2"></div>
+    <div class="grid-bg"></div>
+
+    <header class="hero">
+      <div class="badge">✦ MY GALLERY</div>
+      <h1>RINA<span>GALLERY</span></h1>
+      <p>Tempat untuk menyimpan dan memamerkan koleksi foto favoritku.</p>
+    </header>
+
+    <main class="container">
+      <section class="toolbar">
+        <div class="search">
+          <span>⌕</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Cari foto..."
+            autocomplete="off"
+          />
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">Semua</button>
+          <button class="filter" data-filter="portrait">Portrait</button>
+          <button class="filter" data-filter="nature">Nature</button>
+          <button class="filter" data-filter="travel">Travel</button>
+          <button class="filter" data-filter="other">Lainnya</button>
+        </div>
+      </section>
+
+      <div class="gallery" id="gallery"></div>
+      <div class="empty" id="empty" hidden>Tidak ada foto yang cocok.</div>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="close" id="closeBtn" aria-label="Tutup">×</button>
+      <button class="nav prev" id="prevBtn" aria-label="Sebelumnya">‹</button>
+      <figure>
+        <img id="lightboxImage" src="" alt="" />
+        <figcaption>
+          <strong id="lightboxTitle"></strong>
+          <span id="lightboxCategory"></span>
+        </figcaption>
+      </figure>
+      <button class="nav next" id="nextBtn" aria-label="Berikutnya">›</button>
+    </div>
+
+    <footer>
+      NEON GALLERY • EDIT <code>script.js</code> UNTUK MENAMBAHKAN FOTO
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

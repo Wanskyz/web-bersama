@@ -4,6 +4,7 @@ const works = [
     desc: "Eksperimen visual dengan nuansa clasic.",
     icon: "✦",
     tags: ["Artwork", "Visual"],
+    link: "rina/index.html",
   },
   {
     title: "Creator Landing",
@@ -65,7 +66,7 @@ const friends = [
 document.querySelector("#worksGrid").innerHTML = works
   .map(
     (w, i) => `
-<a class="work" href="#" target="_blank">
+<a class="work" href="${w.link || '#'}" ${w.link ? 'target="_blank" rel="noopener"' : ''}>
   <div class="cover c${i + 1}"><span>${w.icon}</span></div>
   <div class="work-body">
     <h3>${w.title}</h3><p>${w.desc}</p>
