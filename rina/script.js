@@ -7,7 +7,7 @@
   portrait, nature, travel, other
 */
 const photos = [
-  { src: "assets/Chibi_Ramdan.jpg", title: "Foto 01", category: "portrait" },
+  { src: "../assets/Chibi_Ramdan.jpg", title: "Foto 01", category: "portrait" },
   { src: "assets/foto2.jpg", title: "Foto 02", category: "nature" },
   { src: "assets/foto3.jpg", title: "Foto 03", category: "travel" },
   { src: "assets/foto4.jpg", title: "Foto 04", category: "portrait" },
