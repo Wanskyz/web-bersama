@@ -68,7 +68,9 @@ const friends = [
 document.querySelector("#worksGrid").innerHTML = works
   .map(
     (w, i) => `
-<a class="work" href="${w.link || '#'}" ${w.link ? 'target="_blank" rel="noopener"' : ''}>
+<a  class="work"
+  href="${w.page || "#"}"
+  ${w.page ? `data-page="${w.page}"` : ""}>
   <div class="cover c${i + 1}"><span>${w.icon}</span></div>
   <div class="work-body">
     <h3>${w.title}</h3><p>${w.desc}</p>
