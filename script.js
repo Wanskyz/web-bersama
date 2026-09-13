@@ -4,19 +4,21 @@ const works = [
     desc: "Eksperimen visual dengan nuansa clasic.",
     icon: "✦",
     tags: ["Artwork", "Visual"],
-    link: "rina/index.html",
+    page: "rina/index.html",
   },
   {
     title: "Creator Landing",
     desc: "Konsep website modern untuk personal creator.",
     icon: "◈",
     tags: ["Web", "UI/UX"],
+    page: "zi/index.html",
   },
   {
     title: "Night Motion",
     desc: "Motion graphic dengan suasana malam futuristik.",
     icon: "☄",
     tags: ["Motion", "Video"],
+    page: "isi pages html",
   },
 ];
 
